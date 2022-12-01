@@ -1,6 +1,28 @@
+use std::io::{self, Write};
+
 mod day_01;
 
 fn main() {
-    day_01::calorie_counting_part_01("inputs/day_01/input.txt");
-    day_01::calorie_counting_part_02("inputs/day_01/input.txt");
+    print!("\tAdvent of Code 2022\n");
+    print!("Choose a day (1-25): ");
+    io::stdout().flush().unwrap();
+
+    let mut option = String::new();
+    io::stdin()
+        .read_line(&mut option)
+        .expect("Failed to read line!");
+
+    let x = option
+        .trim()
+        .parse::<i32>()
+        .expect("Number");
+
+    match x {
+        1 => {
+            println!("\tDay 01 - Calorie Couting");
+            println!("Find the Elf carrying the most Calories. How many total Calories is that Elf carrying? {}", day_01::calorie_counting_part_01("inputs/day_01/input.txt"));
+            println!("Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total? {}", day_01::calorie_counting_part_02("inputs/day_01/input.txt"));
+        }, 
+        _ => println!("Invalid option")
+    }
 }
