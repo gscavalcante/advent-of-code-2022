@@ -20,8 +20,8 @@ fn main() {
     match x {
         1 => {
             println!("\tDay 01 - Calorie Couting");
-            println!("Find the Elf carrying the most Calories. How many total Calories is that Elf carrying? {}", day_01::calorie_counting_part_01("inputs/day_01/input.txt"));
-            println!("Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total? {}", day_01::calorie_counting_part_02("inputs/day_01/input.txt"));
+            println!("Find the Elf carrying the most Calories. How many total Calories is that Elf carrying? {}", day_01::part_01("inputs/day_01/input.txt"));
+            println!("Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total? {}", day_01::part_02("inputs/day_01/input.txt"));
         }, 
         _ => println!("Invalid option")
     }

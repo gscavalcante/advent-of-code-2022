@@ -1,6 +1,6 @@
 use std::{fs, ops::Add};
 
-pub fn calorie_counting_part_01(file_path: &str) -> i32 {
+pub fn part_01(file_path: &str) -> i32 {
     let input = fs::read_to_string(file_path)
         .expect("Should have been able to read the file")
         .add("\n ");
@@ -29,12 +29,12 @@ pub fn calorie_counting_part_01(file_path: &str) -> i32 {
 }
 
 #[test]
-fn calorie_counting_part_01_with_example_data() {
-    let result = calorie_counting_part_01("inputs/day_01/example.txt");
+fn part_01_with_example_data() {
+    let result = part_01("inputs/day_01/example.txt");
     assert_eq!(result, 24000);
 }
 
-pub fn calorie_counting_part_02(file_path: &str) -> i32 {
+pub fn part_02(file_path: &str) -> i32 {
     let input = fs::read_to_string(file_path)
         .expect("Should have been able to read the file")
         .add("\n ");
@@ -71,7 +71,7 @@ pub fn calorie_counting_part_02(file_path: &str) -> i32 {
 }
 
 #[test]
-fn calorie_counting_part_02_with_example_data() {
-    let result = calorie_counting_part_02("inputs/day_01/example.txt");
+fn part_02_with_example_data() {
+    let result = part_02("inputs/day_01/example.txt");
     assert_eq!(result, 45000);
 }
