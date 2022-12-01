@@ -1,3 +1,5 @@
+mod day_01;
+
 fn main() {
-    println!("Hello, world!");
+    day_01::calorie_counting("inputs/day_01/input.txt");
 }
