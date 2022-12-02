@@ -27,6 +27,7 @@ fn main() {
         2 => {
             println!("\tDay 02 - Rock Paper Scissors");
             println!("What would your total score be if everything goes exactly according to your strategy guide? {}", day_02::part_01("inputs/day_02/input.txt"));
+            println!("Following the Elf's instructions for the second column, what would your total score be if everything goes exactly according to your strategy guide? {}", day_02::part_02("inputs/day_02/input.txt"));
         } 
         _ => println!("Invalid option")
     }
