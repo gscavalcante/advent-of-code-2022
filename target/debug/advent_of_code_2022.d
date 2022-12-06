@@ -1,1 +1,0 @@
-/home/gabriel/projects/adventofcode/target/debug/advent_of_code_2022: /home/gabriel/projects/adventofcode/src/day_01.rs /home/gabriel/projects/adventofcode/src/day_02.rs /home/gabriel/projects/adventofcode/src/main.rs
