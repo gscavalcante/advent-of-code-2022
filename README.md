@@ -1,11 +1,11 @@
 # Advent of Code - 2022
 
-[Go to](https://adventofcode.com/2022)
+This is my codes for the [Advent of Code 2022](https://adventofcode.com/2022).
 
 I'm doing this challenge in [Rust](https://www.rust-lang.org/). Keep in mind
 that I'm not a rustacean and also I don't almost anything about this language.
 
-I hope to improv this code later.
+I hope to improve this code later.
 
 ## How to test
 
